@@ -13,7 +13,7 @@ abstract public class GeoFigur {
 		this.xpos = xpos;
 		this.ypos = ypos;
 	}
-	
+	 
 	abstract public double berechneFlaeche();
 	
 	public String toString(){
