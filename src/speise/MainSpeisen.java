@@ -19,6 +19,7 @@ public class MainSpeisen {
 		
 		Speisekarte speisekarte = new Speisekarte();
 		speisekarte.setName("Tageskarte IT3X");
+		
 		speisekarte.addSpeise(salami);
 		speisekarte.addSpeise(spaghetti);
 		speisekarte.addSpeise(gemueseauflauf);

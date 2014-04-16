@@ -1,6 +1,7 @@
 package speise;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Speisekarte {
 	
@@ -26,9 +27,14 @@ public class Speisekarte {
 	public double getAveragePrice(){
 		double priceSum = 0;
 		
-		for( int i = 0; i<this.speisen.size(); i++){
-			priceSum += this.speisen.get(i).getPreis();
+		Iterator<Speise> iterator = this.speisen.iterator();
+		Speise speise;
+		
+		while( iterator.hasNext() ){
+			speise = iterator.next();
+			priceSum += speise.getPreis();
 		}
+
 		
 		return priceSum / this.speisen.size();
 	}
